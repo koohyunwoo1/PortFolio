@@ -24,11 +24,13 @@
 ## 📂 프로젝트 구조
 
 ```plaintext
-src/
-├── components/        # 재사용 가능한 컴포넌트
-├── pages/             # 주요 페이지
-├── assets/            # 이미지, 아이콘, 폰트 등 정적 파일
-├── styles/            # 전역 및 공통 스타일 파일
-├── utils/             # 유틸리티 함수
-├── App.jsx            # 앱의 진입점
-└── main.jsx           # React DOM 렌더링
+/Portfolio
+├── assets/         # 정적 파일 (이미지, 아이콘 등)
+├── components/     # 재사용 가능한 컴포넌트
+├── pages/          # 주요 페이지 파일
+├── style/          # 전역 및 개별 스타일 파일
+├── App.css         # 글로벌 스타일 정의
+├── App.jsx         # 애플리케이션의 진입점
+├── index.css       # 추가 글로벌 스타일
+└── main.jsx        # ReactDOM 렌더링 엔트리 파일
+
