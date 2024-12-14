@@ -4,10 +4,10 @@ import ProjectItem from "../../components/Project/ProjectItem";
 import "../../style/Project/Project.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../../style/Home/Home.css";
-
 import GflexImage from "../../assets/Gflex.png";
 import RunUsImage from "../../assets/RunUs.png";
 import PillSooImage from "../../assets/PillSoo.png";
+import Arrow from "../../components/common/Arrow";
 
 const Project = () => {
   const [showHeaderBar, setShowHeaderBar] = useState(false);
@@ -92,17 +92,8 @@ const Project = () => {
         Projects
       </div>
       {showArrow && (
-        <div
-          className="arrow"
-          onClick={handleArrowClick}
-          style={{
-            position: "absolute",
-            bottom: "150px",
-            left: "50%",
-          }}
-        >
-          <span></span>
-          <span></span>
+        <div onClick={handleArrowClick}>
+          <Arrow />
         </div>
       )}
       <div className="ProjectSubtitle" id="project-subtitle">

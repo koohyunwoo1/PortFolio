@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../style/Profile/Profile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,6 +13,32 @@ import Skill from "./Skill";
 import Career from "./Career";
 
 const Profile = () => {
+  const hrRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (hrRef.current) {
+      observer.observe(hrRef.current);
+    }
+
+    return () => {
+      if (hrRef.current) {
+        observer.unobserve(hrRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div>
       <div className="Profile">
@@ -38,7 +64,9 @@ const Profile = () => {
             <span className="Badge">React.js</span>
           </div>
           <div className="ProfileIntro">
-            사용자 중심의 인터페이스를 만들어가는 프론트엔드 개발자입니다.
+            최고의 UI/UX는 보이지 않지만 느껴지는 것.
+            <br />
+            보이지 않는 완벽함을 위해 노력하는 프론트엔드 개발자입니다.
           </div>
           <div className="ProfileLink">
             <div className="ProfileGithub">
@@ -62,11 +90,12 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <hr className="ProfileHr" />
+
+      <hr ref={hrRef} className={`ProfileHr ${isVisible ? "animate" : ""}`} />
+
       <div className="ProfileSkill" id="Skill">
         <Skill />
       </div>
-      <hr className="ProfileHr" />
       <div className="ProfileCareer">
         <Career />
       </div>

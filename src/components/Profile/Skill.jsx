@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../style/Profile/Skill.css";
-import Modal from "../common/Modal";
 
 const Skill = () => {
   const hardSkills = [
@@ -13,10 +12,8 @@ const Skill = () => {
           className: "js",
           description: (
             <>
-              - ES6 이후의 문법: 템플릿 리터럴, 화살표 함수, 스프레드 연산자
-              등을 활용할 수 있습니다.
-              <br />- async/await와 Fetch API를 사용해 비동기 작업 및 서버와의
-              동적 통신을 구현했습니다.
+              - ES6 문법 활용 (템플릿 리터럴, 화살표 함수, 스프레드 연산자 등)
+              <br />- 비동기 작업 처리 (async/await, Fetch API)
             </>
           ),
         },
@@ -26,10 +23,8 @@ const Skill = () => {
           className: "ts",
           description: (
             <>
-              - JavaScript의 타입 안정성을 제공하여 유지보수성과 가독성을 높일
-              수 있습니다.
-              <br />- React와 같은 라이브러리와 함께 사용해 타입 안정성을
-              보장하며 오류를 줄일 수 있습니다.
+              - 타입 안정성 제공 (오류 감소, 유지보수 용이)
+              <br />- React와 결합해 안전한 상태 관리
             </>
           ),
         },
@@ -39,10 +34,8 @@ const Skill = () => {
           className: "html",
           description: (
             <>
-              - 시맨틱 태그를 활용해 구조적이고 접근성 높은 웹 페이지를 설계할
-              수 있습니다.
-              <br />- 최신 브라우저 API를 사용해 동적인 웹 기능을 구현할 수
-              있습니다.
+              - 시맨틱 태그 사용으로 구조적 웹 설계
+              <br />- 최신 브라우저 API 활용
             </>
           ),
         },
@@ -52,10 +45,8 @@ const Skill = () => {
           className: "css",
           description: (
             <>
-              - CSS3를 사용해 스타일링과 레이아웃 설계를 할 수 있으며, 반응형
-              디자인을 구현할 수 있습니다.
-              <br />- Flexbox와 Grid를 활용해 복잡한 레이아웃을 효율적으로
-              개발할 수 있습니다.
+              - 반응형 웹 디자인 (Flexbox, Grid 활용)
+              <br />- 복잡한 레이아웃 관리
             </>
           ),
         },
@@ -65,9 +56,8 @@ const Skill = () => {
           className: "python",
           description: (
             <>
-              - Python을 사용해 데이터 분석 및 간단한 스크립트를 작성할 수
-              있습니다.
-              <br />- Django를 사용해 웹 서버를 구축한 경험이 있습니다.
+              - 데이터 분석 및 자동화 스크립트 작성
+              <br />- Django 웹 서버 구축 경험
             </>
           ),
         },
@@ -82,10 +72,8 @@ const Skill = () => {
           className: "react",
           description: (
             <>
-              - React를 사용해 UI를 컴포넌트 기반으로 설계하고, 동적 웹
-              애플리케이션을 개발할 수 있습니다.
-              <br />- 상태 관리 라이브러리(Redux, Zustand, Context API 등)를
-              사용해 대규모 웹 서비스를 관리할 수 있습니다.
+              - 컴포넌트 기반 UI 설계
+              <br />- 상태 관리 라이브러리 통합 (Redux, Zustand 등)
             </>
           ),
         },
@@ -95,9 +83,8 @@ const Skill = () => {
           className: "react-native",
           description: (
             <>
-              - React Native로 모바일 애플리케이션을 개발한 경험이 있습니다.
-              <br />- 네이티브 모듈 연동과 애니메이션 처리를 통해 사용자 경험을
-              향상시켰습니다.
+              - 모바일 앱 개발 (iOS/Android 지원)
+              <br />- 네이티브 모듈 연동, 애니메이션 처리
             </>
           ),
         },
@@ -107,10 +94,8 @@ const Skill = () => {
           className: "vue",
           description: (
             <>
-              - Vue.js로 간단한 SPA(Single Page Application)를 구현한 경험이
-              있습니다.
-              <br />- Pinia를 활용한 상태 관리와 컴포넌트 기반 설계 경험이
-              있습니다.
+              - SPA 개발 (컴포넌트 기반 구조)
+              <br />- Pinia 상태 관리 활용
             </>
           ),
         },
@@ -125,10 +110,8 @@ const Skill = () => {
           className: "figma",
           description: (
             <>
-              - UI/UX 디자인 협업 도구로 사용하며, 프로토타입을 설계한 경험이
-              있습니다.
-              <br />- 컴포넌트 기반 설계와 Auto Layout을 활용해 효율적으로
-              디자인을 제작할 수 있습니다.
+              - UI/UX 프로토타이핑
+              <br />- Auto Layout 및 컴포넌트 관리
             </>
           ),
         },
@@ -138,10 +121,8 @@ const Skill = () => {
           className: "notion",
           description: (
             <>
-              - 팀 협업 및 프로젝트 관리 도구로 사용하며, 효율적인 작업 흐름을
-              구성했습니다.
-              <br />- 데이터베이스와 템플릿을 활용해 체계적인 문서화를 진행할 수
-              있습니다.
+              - 팀 협업 및 프로젝트 관리
+              <br />- 데이터베이스 및 템플릿 생성
             </>
           ),
         },
@@ -151,10 +132,8 @@ const Skill = () => {
           className: "jira",
           description: (
             <>
-              - 애자일 기반 프로젝트 관리를 위해 사용하며, 스프린트 및 태스크
-              관리를 효율적으로 수행했습니다.
-              <br />- JIRA 보드를 활용해 팀 내 작업 진행 상황을 시각적으로
-              관리했습니다.
+              - 애자일 프로젝트 관리 (스프린트/태스크 관리)
+              <br />- 작업 진행 상황 시각적 관리
             </>
           ),
         },
@@ -164,9 +143,8 @@ const Skill = () => {
           className: "git",
           description: (
             <>
-              - Git을 활용해 버전 관리를 체계적으로 수행하고, 협업 시 브랜치
-              전략을 사용합니다.
-              <br />- GitHub Actions를 통해 CI/CD 자동화를 경험했습니다.
+              - 버전 관리 및 브랜치 전략 적용
+              <br />- CI/CD 자동화 (GitHub Actions)
             </>
           ),
         },
@@ -299,19 +277,6 @@ const Skill = () => {
       ],
     },
   ];
-
-  // const [isModalVisible, setModalVisible] = useState(false);
-  // const [modalContent, setModalContent] = useState("");
-
-  // const openModal = (description) => {
-  //   setModalContent(description);
-  //   setModalVisible(true);
-  // };
-
-  // const closeModal = () => {
-  //   setModalContent("");
-  //   setModalVisible(false);
-  // };
 
   return (
     <div>
