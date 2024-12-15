@@ -96,6 +96,7 @@ const Profile = () => {
       <div className="ProfileSkill" id="Skill">
         <Skill />
       </div>
+      <hr ref={hrRef} className={`ProfileHr ${isVisible ? "animate" : ""}`} />
       <div className="ProfileCareer">
         <Career />
       </div>
