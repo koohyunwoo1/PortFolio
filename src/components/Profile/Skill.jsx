@@ -1,7 +1,14 @@
+import { useState } from "react";
 import React from "react";
 import "../../style/Profile/Skill.css";
 
 const Skill = () => {
+  const [activeSkill, setActiveSkill] = useState(null);
+
+  const toggleDescription = (index) => {
+    setActiveSkill(activeSkill === index ? null : index);
+  };
+
   const hardSkills = [
     {
       title: "Language",
@@ -72,7 +79,7 @@ const Skill = () => {
           className: "react",
           description: (
             <>
-              - 컴포넌트 기반 UI 설계
+              - 재사용성 높은 컴포넌트 설계
               <br />- 상태 관리 라이브러리 통합 (Redux, Zustand 등)
             </>
           ),
@@ -132,7 +139,7 @@ const Skill = () => {
           className: "jira",
           description: (
             <>
-              - 애자일 프로젝트 관리 (스프린트/태스크 관리)
+              - 애자일 프로젝트 관리
               <br />- 작업 진행 상황 시각적 관리
             </>
           ),
@@ -288,11 +295,7 @@ const Skill = () => {
             <div className="SkillBadges">
               {skillGroup.items.map((skill, idx) => (
                 <div className="SkillBadgeContainer" key={idx}>
-                  <img
-                    src={skill.imageSrc}
-                    alt={skill.name}
-                    className="SkillBadgeImage"
-                  />
+                  <img src={skill.imageSrc} className="SkillBadgeImage" />
                   <span className="SkillBadgeText">{skill.name}</span>
                   <div className="SkillDescription">{skill.description}</div>
                 </div>

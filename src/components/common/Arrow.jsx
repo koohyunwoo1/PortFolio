@@ -3,9 +3,11 @@ import "../../style/Common/Arrow.css";
 
 const Arrow = ({ onClick }) => {
   return (
-    <div className="arrow" onClick={onClick}>
-      <span></span>
-      <span></span>
+    <div className="arrowContainer" onClick={onClick}>
+      <div className="arrow">
+        <span></span>
+        <span></span>
+      </div>
     </div>
   );
 };
