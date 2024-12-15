@@ -13,7 +13,8 @@ import Skill from "./Skill";
 import Career from "./Career";
 
 const Profile = () => {
-  const hrRef = useRef(null);
+  const hrRef1 = useRef(null);
+  const hrRef2 = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -28,13 +29,19 @@ const Profile = () => {
       { threshold: 0.1 }
     );
 
-    if (hrRef.current) {
-      observer.observe(hrRef.current);
+    if (hrRef1.current) {
+      observer.observe(hrRef1.current);
+    }
+    if (hrRef2.current) {
+      observer.observe(hrRef2.current);
     }
 
     return () => {
-      if (hrRef.current) {
-        observer.unobserve(hrRef.current);
+      if (hrRef1.current) {
+        observer.unobserve(hrRef1.current);
+      }
+      if (hrRef2.current) {
+        observer.unobserve(hrRef2.current);
       }
     };
   }, []);
@@ -91,12 +98,12 @@ const Profile = () => {
         </div>
       </div>
 
-      <hr ref={hrRef} className={`ProfileHr ${isVisible ? "animate" : ""}`} />
+      <hr ref={hrRef1} className={`ProfileHr ${isVisible ? "animate" : ""}`} />
 
       <div className="ProfileSkill" id="Skill">
         <Skill />
       </div>
-      <hr ref={hrRef} className={`ProfileHr ${isVisible ? "animate" : ""}`} />
+      <hr ref={hrRef2} className={`ProfileHr ${isVisible ? "animate" : ""}`} />
       <div className="ProfileCareer">
         <Career />
       </div>
