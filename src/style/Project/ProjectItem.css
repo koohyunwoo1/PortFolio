@@ -132,8 +132,7 @@
 .projectSkills,
 .projectTools,
 .projectTeam,
-.projectRole,
-.projectDescription .projectFeel {
+.projectRole, .projectFeel {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -145,7 +144,6 @@
 .projectTools h1,
 .projectTeam h1,
 .projectRole h1,
-.projectDescription h1,
 .projectFeel h1 {
   font-size: 18px;
   margin-right: 10px;
@@ -156,7 +154,6 @@
 .projectTools p,
 .projectTeam p,
 .projectRole p,
-.projectDescription p,
 .projectFeel p {
   margin-left: 30px;
   white-space: normal;
