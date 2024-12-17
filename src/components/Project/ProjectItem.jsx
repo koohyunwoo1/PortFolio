@@ -9,17 +9,6 @@ import RunUsThumbnail from "../../assets/RunUs.png";
 const projects = [
   {
     id: 1,
-    title: "PillSoo",
-    thumbnail: PillSooThumbnail,
-    images: Array.from(
-      { length: 12 },
-      (_, index) => `/assets/PillSoo/image${index}.jpg`
-    ),
-    period: "2024.08.26 - 2024.10.11 (7주)",
-    link: "https://github.com/koohyunwoo1/Pillsoo",
-  },
-  {
-    id: 2,
     title: "RunUs",
     thumbnail: RunUsThumbnail,
     images: Array.from(
@@ -28,6 +17,17 @@ const projects = [
     ),
     period: "2024.07.05 - 2024.08.16 (6주)",
     link: "https://github.com/koohyunwoo1/RunUs",
+  },
+  {
+    id: 2,
+    title: "PillSoo",
+    thumbnail: PillSooThumbnail,
+    images: Array.from(
+      { length: 12 },
+      (_, index) => `/assets/PillSoo/image${index}.jpg`
+    ),
+    period: "2024.08.26 - 2024.10.11 (7주)",
+    link: "https://github.com/koohyunwoo1/Pillsoo",
   },
   {
     id: 3,
