@@ -181,33 +181,53 @@ class ProjectItem extends Component {
                       <>
                         <strong>문제 발생 배경:</strong> 적을예정
                         <br />
+                        <br />
                         <strong>문제 원인:</strong> 적을예정
                         <br />
+                        <br />
                         <strong>해결 과정:</strong> 적을예정
+                        <br />
                         <br />
                         <strong>결과:</strong> 적을예정
                       </>
                     ) : this.state.selectedProject.title === "RunUs" ? (
-                      <>
-                        <strong>문제 발생 배경:</strong> GPS 데이터를 받아오는
-                        과정에서 위치 튐 현상 발생
+                      <div>
+                        <strong>문제 발생 배경</strong>
+                        <br />- GPS 데이터를 받아오는 과정에서 위치 튐 현상 발생
                         <br />
-                        <strong>문제 원인:</strong> GPS 신호 불안정 및 데이터
-                        수집 시간 차이
+                        - 웹소켓 연결이 자주 끊어지는 현상 발생
                         <br />
-                        <strong>해결 과정:</strong> GPS 데이터 필터링 알고리즘
-                        개발 및 테스트 환경 검증
                         <br />
-                        <strong>결과:</strong> 이동 거리 오차 10m 이내로 정확도
-                        향상
-                      </>
+                        <strong>문제 원인:</strong> <br />
+                        - GPS 신호 불안정 및 데이터 수집 시간 차이로 인한 위치
+                        튐 현상 발생 <br />
+                        - 네트워크 상태 변화 및 서버 부하로 인해 웹 소켓 연결
+                        불안정
+                        <br />
+                        <br />
+                        <strong>해결 과정:</strong> <br />
+                        - 이동 거리와 시간을 계산하여 위치가 비정상적으로 튀었을
+                        때 최대 이동 가능한 거리로 대체하는 GPS 데이터 필터링
+                        알고리즘을 개발함 <br />
+                        - 연결 끊김 감지 및 자동 재연결 로직을 구현하여 안정적인
+                        연결 유지
+                        <br />
+                        <br />
+                        <strong>결과:</strong> <br />
+                        - 이동 거리 오차 10m 이내로 정확도 향상 <br /> - 웹 소켓
+                        연결 안정성을 확보하여 단체 러닝 측정 기능이 원활히
+                        작동함
+                      </div>
                     ) : (
                       <>
                         <strong>문제 발생 배경:</strong> 적을예정
                         <br />
+                        <br />
                         <strong>문제 원인:</strong> 적을예정
                         <br />
+                        <br />
                         <strong>해결 과정:</strong> 적을예정
+                        <br />
                         <br />
                         <strong>결과:</strong> 적을예정
                       </>
