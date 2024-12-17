@@ -4,7 +4,7 @@ import "../../style/Components/Name.css";
 const Name = ({ onComplete }) => {
   const [displayedText, setDisplayedText] = useState("");
   const fullText = `HyunWoo\nPORTFOLIO`;
-  const delay = 100;
+  const delay = 50;
 
   useEffect(() => {
     let index = 0;
