@@ -279,51 +279,34 @@ class ProjectItem extends Component {
                       </div>
                     ) : (
                       <div>
-                        <strong
-                          style={{
-                            fontSize: "18px",
-                          }}
-                        >
+                        <strong style={{ fontSize: "18px" }}>
                           문제 발생 배경
                         </strong>
-                        <br />- 적을 예정
                         <br />
-                        - 적을 예정
+                        - Google Vision API 사용 중 OCR 구현 시 인증 관련 오류
+                        발생
                         <br />
-                        <br />
-                        <strong
-                          style={{
-                            fontSize: "18px",
-                          }}
-                        >
-                          문제 원인:
-                        </strong>
-                        <br />
-                        - 적을 예정 <br />
-                        - 적을 예정
+                        -Access Token 만료 후 Refresh Token으로 재발급 불가
                         <br />
                         <br />
-                        <strong
-                          style={{
-                            fontSize: "18px",
-                          }}
-                        >
-                          해결 과정:
-                        </strong>
+                        <strong style={{ fontSize: "18px" }}>문제 원인</strong>
                         <br />
-                        - 적을 예정 <br />
-                        - 적을 예정
+                        - Vision API는 API Key만으로 인증 가능
+                        <br />
+                        - 불필요한 OAuth 2.0 인증 방식 사용 시도
                         <br />
                         <br />
-                        <strong
-                          style={{
-                            fontSize: "18px",
-                          }}
-                        >
-                          결과:
-                        </strong>
+                        <strong style={{ fontSize: "18px" }}>해결 과정</strong>
                         <br />
-                        - 적을 예정 <br /> - 적을 예정
+                        - Google Vision API 공식 문서 재확인
+                        <br />
+                        - API Key 방식으로 코드 수정 및 테스트 진행
+                        <br />
+                        <br />
+                        <strong style={{ fontSize: "18px" }}>결과</strong>
+                        <br />
+                        - 불필요한 인증 절차 제거로 간단하고 안정적인 구현 성공
+                        <br />- OCR 기능 요청 시 오류 없이 정상 작동 확인
                       </div>
                     )}
                   </p>
