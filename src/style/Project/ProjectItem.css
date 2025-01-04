@@ -144,8 +144,9 @@
 .projectTools h1,
 .projectTeam h1,
 .projectRole h1,
-.projectFeel h1 {
-  font-size: 18px;
+.projectFeel h1,
+.projectImages h1{
+  font-size: 18px; 
   margin-right: 10px;
   color: bisque;
 }
@@ -154,7 +155,8 @@
 .projectTools p,
 .projectTeam p,
 .projectRole p,
-.projectFeel p {
+.projectFeel p,
+.projectImages p {
   margin-left: 30px;
   white-space: normal;
   word-break: break-all;
@@ -184,3 +186,9 @@
   font-weight: bold;
   transition: background-color 0.3s;
 }
+
+.projectSmallText {
+  font-size: 12px; 
+  color: #b0b0b0; 
+}
+

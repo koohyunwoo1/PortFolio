@@ -56,6 +56,7 @@ const projects = [
 class ProjectItem extends Component {
   state = {
     selectedProject: null,
+    selectedImage: null,
   };
 
   openModal = (project) => {
@@ -63,7 +64,15 @@ class ProjectItem extends Component {
   };
 
   closeModal = () => {
-    this.setState({ selectedProject: null });
+    this.setState({ selectedProject: null, selectedImage: null });
+  };
+
+  openImageModal = (image) => {
+    this.setState({ selectedImage: image });
+  };
+
+  closeImageModal = () => {
+    this.setState({ selectedImage: null });
   };
 
   render() {
@@ -381,10 +390,70 @@ class ProjectItem extends Component {
                 </div>
               </div>
               <div className="projectImages">
-                {this.state.selectedProject.images.map((image, index) => (
-                  <img key={index} src={image} alt={`project ${index}`} />
-                ))}
+                <h1>
+                  프로젝트 이미지 소개
+                  <br />
+                  <span className="projectSmallText">
+                    이미지 클릭시 확대됩니다.
+                  </span>
+                </h1>
+                <p>
+                  {this.state.selectedProject.images.map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`project ${index}`}
+                      onClick={() => this.openImageModal(image)}
+                      style={{ cursor: "pointer" }}
+                    />
+                  ))}
+                </p>
               </div>
+            </div>
+          </div>
+        )}
+        {this.state.selectedImage && (
+          <div
+            className="modal"
+            onClick={this.closeImageModal}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div
+              className="modalContent"
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                maxWidth: "90vw",
+                maxHeight: "90vh",
+                backgroundColor: "transparent",
+              }}
+            >
+              <span
+                className="modalClose"
+                onClick={this.closeImageModal}
+                style={{
+                  position: "absolute",
+                  top: "10px",
+                  right: "10px",
+                  fontSize: "2em",
+                  color: "white",
+                  cursor: "pointer",
+                  zIndex: "10",
+                }}
+              >
+                &times;
+              </span>
+              <img
+                src={this.state.selectedImage}
+                style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  objectFit: "contain",
+                }}
+              />
             </div>
           </div>
         )}
