@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FaGithub } from "react-icons/fa";
 import "../../style/Project/ProjectItem.css";
-
+import MusicThumbnail from "../../assets/Music.png";
 import GflexThumbnail from "../../assets/Gflex.png";
 import PillSooThumbnail from "../../assets/PillSoo.png";
 import RunUsThumbnail from "../../assets/RunUs.png";
@@ -12,7 +12,7 @@ const projects = [
     title: "RunUs",
     thumbnail: RunUsThumbnail,
     images: Array.from(
-      { length: 12 },
+      { length: 6 },
       (_, index) => `/assets/RunUs/image${index}.gif`
     ),
     period: "2024.07.05 - 2024.08.16 (6주)",
@@ -23,7 +23,7 @@ const projects = [
     title: "PillSoo",
     thumbnail: PillSooThumbnail,
     images: Array.from(
-      { length: 12 },
+      { length: 7 },
       (_, index) => `/assets/PillSoo/image${index}.jpg`
     ),
     period: "2024.08.26 - 2024.10.11 (7주)",
@@ -31,6 +31,17 @@ const projects = [
   },
   {
     id: 3,
+    title: "Music",
+    thumbnail: MusicThumbnail,
+    images: Array.from(
+      { length: 4 },
+      (_, index) => `/assets/Music/image${index}.png`
+    ),
+    period: "2024.10.14 - 2024.11.19 (6주)",
+    link: "https://github.com/koohyunwoo1/Music_platform_JaeGuSong",
+  },
+  {
+    id: 4,
     title: "Gflex",
     thumbnail: GflexThumbnail,
     images: Array.from(
@@ -104,18 +115,19 @@ class ProjectItem extends Component {
                   <div>
                     {this.state.selectedProject.title === "Gflex" ? (
                       <>
-                        {/* <span className="projectBadge">Django</span> */}
-                        <span className="projectBadge">Vue.js</span>
+                        <span className="projectBadge">Vue</span>
                       </>
                     ) : this.state.selectedProject.title === "RunUs" ? (
                       <>
-                        <span className="projectBadge">React.js</span>
-                        {/* <span className="projectBadge">Spring</span> */}
+                        <span className="projectBadge">React</span>
+                      </>
+                    ) : this.state.selectedProject.title === "Music" ? (
+                      <>
+                        <span className="projectBadge">React</span>
                       </>
                     ) : (
                       <>
                         <span className="projectBadge">ReactNative</span>
-                        {/* <span className="projectBadge">Spring</span> */}
                       </>
                     )}
                   </div>
@@ -142,6 +154,8 @@ class ProjectItem extends Component {
                       ? "2명 (백엔드 1명, 프론트엔드 1명)"
                       : this.state.selectedProject.title === "RunUs"
                       ? "7명 (백엔드 5명, 프론트엔드 2명)"
+                      : this.state.selectedProject.title === "Music"
+                      ? "5명 (백엔드 2명, 프론트엔드 3명)"
                       : "6명 (백엔드 4명, 프론트엔드 2명)"}
                   </p>
                 </div>
@@ -155,20 +169,40 @@ class ProjectItem extends Component {
                       </>
                     ) : this.state.selectedProject.title === "RunUs" ? (
                       <>
-                        - 기획
+                        - 프론트엔드 팀장
                         <br />
                         - 전체적인 UI 담당
-                        <br />
-                        - Auth 기능을 제외한 모든 기능 개발
                         <br />- Geolocation API를 사용하여 위치 정보를 받아오고,
                         알고리즘을 활용해 위치 튐 현상을 보정
+                        <br />- 러닝 기록 페이지 구현
+                      </>
+                    ) : this.state.selectedProject.title === "Music" ? (
+                      <>
+                        - 프론트엔드 팀장
+                        <br />
+                        - 간단한 음악 플래시 게임 3가지 구현
+                        <br />
+                        - 실제 드럼 소리를 이용해서 들려준 드럼 소리를 따라치는
+                        게임
+                        <br />
+                        - 들려주는 음역대를 맞추는 절대음감 게임
+                        <br />
+                        - 목소리 높낮이를 이용해서 위에서 떨어지는 장애물을
+                        피하는 게임
+                        <br />- 스프링 웹플럭스랑 연동해서 실시간 개인 채팅방,
+                        단체 채팅방 구현
                       </>
                     ) : (
                       <>
-                        - 기획
+                        - 프론트엔드 팀장
                         <br />
                         - 전체적인 UI 담당
-                        <br />- Auth 기능, REST API, OCR 분석 담당
+                        <br />- 회원가입, 로그인, 로그아웃 구현
+                        <br />- OCR 분석 구현
+                        <br />- 현재 내가 복용중인 영양제 관리 스크린 구현
+                        <br />- 구매하고 싶은 영양제 위시 리스트 스크린 구현
+                        <br />- 영양제 추천 스크린(나이별, 현재 나의 건강상태
+                        기반 영양제 추천)구현
                       </>
                     )}
                   </p>
@@ -276,6 +310,30 @@ class ProjectItem extends Component {
                         - 이동 거리 오차 10m 이내로 정확도 향상 <br /> - 웹 소켓
                         연결 안정성을 확보하여 단체 러닝 측정 기능이 원활히
                         작동함
+                      </div>
+                    ) : this.state.selectedProject.title === "Music" ? (
+                      <div>
+                        <strong style={{ fontSize: "18px" }}>
+                          문제 발생 배경
+                        </strong>
+                        <br />
+                        - 적을예정
+                        <br />
+                        <br />
+                        <strong style={{ fontSize: "18px" }}>문제 원인</strong>
+                        <br />
+                        - 적을예정
+                        <br />
+                        <br />
+                        <strong style={{ fontSize: "18px" }}>해결 과정</strong>
+                        <br />
+                        - 적을예정
+                        <br />
+                        <br />
+                        <strong style={{ fontSize: "18px" }}>결과</strong>
+                        <br />
+                        - 적을예정
+                        <br />
                       </div>
                     ) : (
                       <div>
