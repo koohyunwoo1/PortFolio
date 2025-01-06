@@ -426,8 +426,8 @@ class ProjectItem extends Component {
               className="modalContent"
               onClick={(e) => e.stopPropagation()}
               style={{
-                maxWidth: "90vw",
-                maxHeight: "90vh",
+                maxWidth: "60vw",
+                maxHeight: "60vh",
                 backgroundColor: "transparent",
               }}
             >

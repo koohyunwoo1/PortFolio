@@ -12,17 +12,10 @@
   text-align: center;
 }
 
-.SoftSkill {
-  font-size: 48px;
-  font-weight: bold;
-  color: white;
-  margin-top: 120px;
-  text-align: center;
-}
-
 .SkillSection {
   margin-top: 30px;
 }
+
 .SkillSubTitle {
   margin-top: 50px;
   font-size: 24px;
@@ -44,28 +37,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 180px;
+  width: auto;
+  height: 140px;
   cursor: pointer;
-  transition: transform 0.3s ease;
   margin: 15px;
+  padding: 15px;
   background-color: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  overflow: visible;
-}
-
-.SkillBadgeContainer:hover {
-  transform: scale(1.2);
-  z-index: 10;
+  border-radius: 15px;  
 }
 
 .SkillBadgeImage {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 10px;
 }
+
 
 .SkillBadgeText {
   font-size: 20px;
@@ -74,29 +60,15 @@
 }
 
 .SkillDescription {
-  position: absolute;
-  bottom: -140px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 220px;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-  /* background-color: white;
-  color: black; */
-  padding: 15px;
-  border-radius: 12px;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none;
-  z-index: 20;
 }
 
-.SkillBadgeContainer:hover .SkillDescription {
-  opacity: 1;
-  transform: translateX(-10%) translateY(-100px);
-}
+
+
+/* 소프트 스킬 */
 
 .SoftSkillTitle {
   font-size: 20px;
