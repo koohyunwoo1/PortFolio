@@ -402,7 +402,6 @@ class ProjectItem extends Component {
                     <img
                       key={index}
                       src={image}
-                      alt={`project ${index}`}
                       onClick={() => this.openImageModal(image)}
                       style={{ cursor: "pointer" }}
                     />
