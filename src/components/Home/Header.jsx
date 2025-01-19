@@ -31,7 +31,8 @@ const Header = () => {
 
   return (
     <div>
-      <h1 className="Header">Front-end Developer</h1>
+      {/* <h1 className="Header">Front-end Developer</h1> */}
+      <h1 className="Header">Developer</h1>
       <hr ref={hrRef} className={`ProfileHr ${isVisible ? "animate" : ""}`} />
     </div>
   );

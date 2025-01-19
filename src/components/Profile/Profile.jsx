@@ -54,9 +54,9 @@ const Profile = () => {
           <div className="ProfileName">
             <FontAwesomeIcon icon={faUser} /> 구현우
           </div>
-          <div className="ProfileBirth">
+          {/* <div className="ProfileBirth">
             <FontAwesomeIcon icon={faBirthdayCake} /> 1999.07.07
-          </div>
+          </div> */}
           <div className="ProfileEmailContainer">
             <FontAwesomeIcon icon={faEnvelope} />
             <a href="mailto:kjklovekhw@gmail.com" className="ProfileEmail">
@@ -66,14 +66,21 @@ const Profile = () => {
 
           <div className="Badges">
             <span className="Badge">
-              <FontAwesomeIcon icon={faCodeBranch} /> Frontend Developer
+              {/* <FontAwesomeIcon icon={faCodeBranch} /> Frontend Developer */}
+              <FontAwesomeIcon icon={faCodeBranch} />
+              Developer
             </span>
             <span className="Badge">React.js</span>
           </div>
-          <div className="ProfileIntro">
+          {/* <div className="ProfileIntro">
             최고의 UI/UX는 보이지 않지만 느껴지는 것.
             <br />
             보이지 않는 완벽함을 위해 노력하는 프론트엔드 개발자입니다.
+          </div> */}
+          <div className="ProfileIntro">
+            자바스크립트로 가치를 더하는 개발자.
+            <br />
+            보이지 않는 완벽함을 추구합니다.
           </div>
           <div className="ProfileLink">
             <div className="ProfileGithub">
