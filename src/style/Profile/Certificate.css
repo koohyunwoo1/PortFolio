@@ -1,22 +1,22 @@
-.Career {
+.Certificate {
   font-size: 48px;
   font-weight: bold;
   color: white;
   margin-top: 80px;
 }
 
-.CareerTitle {
+.CertificateTitle {
   font-size: 20px;
   font-weight: bold;
   margin-top: 50px;
 }
 
-.CareerText {
+.CertificateText {
   margin-top: 20px;
   font-weight: bold;
 }
 
-.CareerSubText {
+.CertificateSubText {
   font-size: 14px;
   margin-top: 10px;
   margin-left: 25px;
@@ -26,21 +26,21 @@
   gap: 20px; 
 }
 
-.CareerTitle li {
+.CertificateTitle li {
   padding-left: 10px;
 }
 
-.CareerTitle li::marker {
+.CertificateTitle li::marker {
   content: "•";
   color: white;
   font-size: 24px;
 }
 
-.CareerSubText li {
+.CertificateSubText li {
   padding-left: 10px;
 }
 
-.CareerSubText li::marker {
+.CertificateSubText li::marker {
   content: "✓";
   color: bisque;
   font-size: 24px;

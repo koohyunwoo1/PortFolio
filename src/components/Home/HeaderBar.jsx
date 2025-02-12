@@ -16,6 +16,11 @@ const HeaderBar = () => {
             Projects
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/contact" activeClassName="active">
+            Contact
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

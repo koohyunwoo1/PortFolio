@@ -1,51 +1,15 @@
-import React, { useEffect, useRef, useState } from "react";
 import "../../style/Profile/Profile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
   faBirthdayCake,
-  faEnvelope,
   faCodeBranch,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { SiNotion } from "react-icons/si";
 import Skill from "./Skill";
 import Career from "./Career";
+import Certificate from "./Certificate";
 
 const Profile = () => {
-  const hrRef1 = useRef(null);
-  const hrRef2 = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (hrRef1.current) {
-      observer.observe(hrRef1.current);
-    }
-    if (hrRef2.current) {
-      observer.observe(hrRef2.current);
-    }
-
-    return () => {
-      if (hrRef1.current) {
-        observer.unobserve(hrRef1.current);
-      }
-      if (hrRef2.current) {
-        observer.unobserve(hrRef2.current);
-      }
-    };
-  }, []);
-
   return (
     <div>
       <div className="Profile">
@@ -54,65 +18,59 @@ const Profile = () => {
           <div className="ProfileName">
             <FontAwesomeIcon icon={faUser} /> 구현우
           </div>
-          {/* <div className="ProfileBirth">
+          <div className="ProfileBirth">
             <FontAwesomeIcon icon={faBirthdayCake} /> 1999.07.07
-          </div> */}
-          <div className="ProfileEmailContainer">
-            <FontAwesomeIcon icon={faEnvelope} />
-            <a href="mailto:kjklovekhw@gmail.com" className="ProfileEmail">
-              kjklovekhw@gmail.com
-            </a>
           </div>
 
           <div className="Badges">
             <span className="Badge">
-              {/* <FontAwesomeIcon icon={faCodeBranch} /> Frontend Developer */}
-              <FontAwesomeIcon icon={faCodeBranch} />
-              Developer
+              <FontAwesomeIcon icon={faCodeBranch} /> Frontend Developer
             </span>
             <span className="Badge">React.js</span>
           </div>
-          {/* <div className="ProfileIntro">
-            최고의 UI/UX는 보이지 않지만 느껴지는 것.
-            <br />
-            보이지 않는 완벽함을 위해 노력하는 프론트엔드 개발자입니다.
-          </div> */}
           <div className="ProfileIntro">
-            자바스크립트로 가치를 더하는 개발자.
+            자바스크립트로 가치를 더하는 프론트엔드 개발자.
             <br />
-            보이지 않는 완벽함을 추구합니다.
-          </div>
-          <div className="ProfileLink">
-            <div className="ProfileGithub">
-              <a
-                href="https://github.com/koohyunwoo1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faGithub} /> GitHub
-              </a>
-            </div>
-            <div className="ProfileNotion">
-              <a
-                href="https://www.notion.so/Frontend-developer-1257c5ebb36c804f9f48f9ef42e64263"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SiNotion /> Notion
-              </a>
-            </div>
+            보이는 완벽함을 추구합니다.
           </div>
         </div>
       </div>
 
-      <hr ref={hrRef1} className={`ProfileHr ${isVisible ? "animate" : ""}`} />
+      <div
+        style={{
+          height: "0px",
+          borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+          margin: "20px 0",
+          width: "100%",
+        }}
+      />
 
       <div className="ProfileSkill" id="Skill">
         <Skill />
       </div>
-      <hr ref={hrRef2} className={`ProfileHr ${isVisible ? "animate" : ""}`} />
+      <div
+        style={{
+          height: "0px",
+          borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+          margin: "20px 0",
+          width: "100%",
+        }}
+      />
+
       <div className="ProfileCareer">
         <Career />
+      </div>
+      <div
+        style={{
+          height: "0px",
+          borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+          margin: "20px 0",
+          width: "100%",
+        }}
+      />
+
+      <div className="ProfileCertificate">
+        <Certificate />
       </div>
     </div>
   );

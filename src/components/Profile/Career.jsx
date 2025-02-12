@@ -17,28 +17,29 @@ const Career = () => {
         <li className="CareerText">
           삼성청년SW아카데미 11th ( 2024.01 ~ 2024.12 )
           <ul className="CareerSubText">
+            <li>12개월간 총 1600시간의, SW 개발 집중 교육 수료</li>
             <li>
               파이썬과 Django 프레임워크 학습, HTML, CSS 등 웹 기본 기술 습득,
-              JavaScript 및 Vue.js 프론트엔드 프레임워크 경험.
+              JavaScript 및 Vue.js 프론트엔드 프레임워크 습득.
             </li>
             <li>
-              네 번의 프로젝트를 통해 React와 TypeScript를 학습하고, React
+              4회의 팀 프로젝트를 통해 React와 TypeScript를 학습하고, React
               Native를 이용한 모바일 애플리케이션 개발 경험.
             </li>
           </ul>
         </li>
 
         <li className="CareerText">
-          {/* 경성대학교 빅데이터응용통계학과 (2018.03 ~ 2024.02) */}
-          빅데이터응용통계학과 (2018.03 ~ 2024.02)
+          경성대학교 빅데이터응용통계학과 (2018.03 ~ 2024.02)
           <ul className="CareerSubText">
-            <li>파이썬을 활용한 데이터 전처리, 시각화 및 통계적 분석 실습</li>
             <li>
-              음악 플랫폼 선택과 관련된 실제 설문조사를 실시하여 약 100명의
-              데이터를 확보
+              타이타닉 데이터셋과, 꽃잎 데이터셋을 사용하여 데이터전처리, 탐색적
+              데이터 분석(EDA) 통계적 분석 수행
             </li>
+            <li>Pandas, NumPy, Matplotlib, Seaborn등 라이브러리 사용</li>
             <li>
-              확보된 데이터를 가지고, 가설 검정과, 회귀 분석, 상관 분석을 실시
+              실제 설문조사를 통해 얻은 데이터를 SPSS 프로그램을 이용해
+              상관분석, 회귀분석 등의 기법을 사용하여 데이터 분석 실행
             </li>
           </ul>
         </li>

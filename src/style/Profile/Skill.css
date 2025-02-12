@@ -82,13 +82,11 @@
 }
 
 .SoftSkillSubText {
-  font-size: 16px;
-  margin-top: 20px;
+  font-size: 14px;
+  margin-top: 10px;
   margin-left: 25px;
   font-weight: 400;
-  background-color: #2d2d2d;
-  padding: 40px;
-  border-radius: 20px;
+  padding: 20px;
 }
 
 .SoftSkillSubText li {

@@ -25,25 +25,10 @@
   font-weight: bold;
 }
 
-.ProfileEmailContainer {
-  font-size: 14px;
-  margin-top: 10px;
-  color: white;
-}
-
-.ProfileEmail {
-  color: white;
-  text-decoration: underline;
-}
-
-.ProfileEmail:hover {
-  color: bisque;
-  text-decoration: none;
-}
-
 .ProfileIntro {
   font-size: 14px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .Badges {
@@ -59,10 +44,6 @@
   margin: 5px;
   font-size: 14px;
   font-weight: bold;
-}
-
-.ProfileIntro {
-  margin-top: 10px;
 }
 
 .ProfileSkill {
@@ -98,32 +79,11 @@
   animation: slideIn 1s ease-out forwards;
 }
 
-
-
 .ProfileCareer {
   color: white;
 }
 
-.ProfileLink {
-  display: flex;
-  gap: 20px;
-  margin-top: 10px;
-}
-
-.ProfileGithub a,
-.ProfileNotion a {
-  display: flex;
-  align-items: center;
-  color: #f05032;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.ProfileNotion a {
+.ProfileCertificate {
   color: white;
 }
 
-.ProfileGithub a:hover,
-.ProfileNotion a:hover {
-  color: wheat;
-}

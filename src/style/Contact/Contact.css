@@ -1,0 +1,78 @@
+.Contact {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ContactTitle {
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+  margin-top: 100px;
+}
+
+.ContactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+  padding: 600px 0 200px 0
+
+}
+
+.ContactSubtitle {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.ContactSubtitle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px; 
+  padding-top: 40px;
+}
+
+.ContactSubtitle2 a,
+.ContactSubtitle2 div {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ContactSubtitle2 svg {
+  font-size: 120px; 
+  margin-bottom: 10px; 
+}
+
+.ContactCopy {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.ContactSubtitle2 a:hover svg{
+  color: bisque; 
+}
+
+.ContactCopy:hover{
+  color: bisque; 
+}
