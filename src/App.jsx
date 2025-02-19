@@ -7,19 +7,33 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 
-function App() {
-  const [theme, setTheme] = useState("dark");
+// function App() {
+//   const [theme, setTheme] = useState("dark");
 
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
+//   useEffect(() => {
+//     document.documentElement.setAttribute("data-theme", theme);
+//   }, [theme]);
 
+//   return (
+//     <>
+//       <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+//         {theme === "dark" ? "라이트 모드로 변경" : "다크 모드로 변경"}
+//       </button>
+
+//       <Router>
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/project" element={<Project />} />
+//           <Route path="/contact" element={<Contact />} />
+//         </Routes>
+//       </Router>
+//     </>
+//   );
+// }
+
+const App = () => {
   return (
     <>
-      <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-        {theme === "dark" ? "라이트 모드로 변경" : "다크 모드로 변경"}
-      </button>
-
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -29,6 +43,6 @@ function App() {
       </Router>
     </>
   );
-}
+};
 
 export default App;
