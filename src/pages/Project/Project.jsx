@@ -5,12 +5,12 @@ import "../../style/Project/Project.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../../style/Home/Home.css";
 import Arrow from "../../components/common/Arrow";
+import projects from "../../constants/Project/Project";
 
 const Project = () => {
   const [showHeaderBar, setShowHeaderBar] = useState(false);
   const [animateTitle, setAnimateTitle] = useState(false);
   const [showArrow, setShowArrow] = useState(false);
-
   const handleArrowClick = () => {
     const projectSubtitleElement = document.getElementById("project-subtitle");
     if (projectSubtitleElement) {
@@ -77,7 +77,8 @@ const Project = () => {
         나의 프로젝트
       </div>
       <div className="ProjectSubtitle2">
-        4개의 프로젝트를 진행하였습니다. 아래에서 자세한 내용을 확인하세요.
+        {projects.length}개의 프로젝트를 진행하였습니다. 아래에서 자세한 내용을
+        확인하세요.
       </div>
       <div className="ProjectItemContainer" id="project-item">
         <ProjectItem />

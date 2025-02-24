@@ -19,7 +19,7 @@ const Certificate = () => {
         </li>
 
         <li className="CertificateText">
-          정보처리 기사
+          정보처리기사
           <ul className="CertificateSubText">
             <li>2025년 02월 필기 합격</li>
           </ul>
