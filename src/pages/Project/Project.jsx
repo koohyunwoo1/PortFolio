@@ -77,8 +77,9 @@ const Project = () => {
         나의 프로젝트
       </div>
       <div className="ProjectSubtitle2">
-        {projects.length}개의 프로젝트를 진행하였습니다. 아래에서 자세한 내용을
-        확인하세요.
+        {projects.length}개의 프로젝트를 진행하였으며, 프로젝트 모음집입니다.
+        <br />
+        아래 페이지에서 상세정보를 확인하실 수 있습니다.
       </div>
       <div className="ProjectItemContainer" id="project-item">
         <ProjectItem />

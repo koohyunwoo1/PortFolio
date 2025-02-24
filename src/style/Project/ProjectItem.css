@@ -12,11 +12,11 @@
   display: flex;
   align-items: center;
   transition: transform 0.3s ease;
-  cursor: url("/assets/cursor.png"), auto;
+  cursor: pointer
 }
 
 .projectCard:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 .projectDetails {
@@ -144,7 +144,6 @@
 .projectTools h1,
 .projectTeam h1,
 .projectRole h1,
-.projectFeel h1,
 .projectImages h1{
   font-size: 18px; 
   margin-right: 10px;
@@ -157,7 +156,7 @@
 .projectRole p,
 .projectFeel p,
 .projectImages p {
-  margin-left: 30px;
+  margin-left: 10px;
   white-space: normal;
   word-break: break-all;
 }
