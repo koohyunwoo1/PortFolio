@@ -170,7 +170,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             <br />
@@ -193,7 +193,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             <br />
@@ -215,7 +215,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             <br />
@@ -240,7 +240,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             <br />
@@ -262,11 +262,12 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             <br />
-                            ∙ 월별로 운동 거리 데이터를 시각화하여 그래프로 제공
+                            ∙ 월별로 운동 거리 데이터를 시각화하여 recharts
+                            라이브러리를 사용하여 그래프로 제공
                             <br />
                             ∙ 다양한 운동 모드를 기준으로 필터링 기능 구현
                             <br />
@@ -289,7 +290,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             <br />
@@ -323,7 +324,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             <br />
@@ -350,7 +351,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             ∙ Spring WebFlux를 활용하여 비동기적이고 실시간으로
@@ -380,7 +381,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             ∙ 영양제 검색 시, 실시간으로 키 입력에 따라 동적으로
@@ -405,7 +406,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             ∙ 영양제 상세 정보 (효능, 주의사항, 유통기한 등)을
@@ -433,7 +434,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             ∙ 위시 리스트와 복용 중인 영양제를 리스트 형식으로
@@ -457,7 +458,7 @@ class ProjectItem extends Component {
                           <br />
                           <div
                             style={{
-                              fontSize: "12px",
+                              fontSize: "14px",
                             }}
                           >
                             ∙ 사용자 맞춤형 영양제 추천 기능을 구현하여, 개별
