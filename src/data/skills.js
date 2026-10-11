@@ -9,8 +9,8 @@ export const techStack = [
     category: "Language",
     isMain: true,
     description: [
-      "ES6 문법 활용 (템플릿 리터럴, 화살표 함수, 스프레드 연산자 등)",
-      "비동기 작업 처리 (async/await, Fetch API)",
+      "Geolocation API로 실시간 이동 경로 추적, 위치 튐 보정으로 오차 5m 이내 개선 (RunUs)",
+      "WebSocket으로 팀원 위치를 지도에 실시간 렌더링 (RunUs)",
     ],
   },
   {
@@ -19,8 +19,8 @@ export const techStack = [
     category: "Frontend",
     isMain: true,
     description: [
-      "재사용성 높은 컴포넌트 설계",
-      "상태 관리 라이브러리 통합 (Redux, Zustand 등)",
+      "Context API 상태 관리, recharts 시각화, 무한 스크롤 구현 (RunUs)",
+      "이 포트폴리오 사이트 설계·구현 (CSS Modules, 디자인 토큰)",
     ],
   },
   {
@@ -67,8 +67,8 @@ export const techStack = [
     image: skillImage("TypeScript"),
     category: "Language",
     description: [
-      "타입 안정성 제공 (오류 감소, 유지보수 용이)",
-      "React와 결합해 안전한 상태 관리",
+      "TypeScript + React 음악 플랫폼 개발 (Music)",
+      "TypeScript + React Native + Redux 모바일 앱 개발 (PillSoo)",
     ],
   },
   {
@@ -76,8 +76,8 @@ export const techStack = [
     image: skillImage("ReactNative"),
     category: "Mobile",
     description: [
-      "모바일 앱 개발 (iOS/Android 지원)",
-      "네이티브 모듈 연동, 애니메이션 처리",
+      "Google Vision API OCR 스캔 기반 영양제 검색 앱 개발 (PillSoo)",
+      "프론트엔드 팀장으로 화면 설계와 일정 관리 담당",
     ],
   },
   // {
@@ -96,7 +96,7 @@ export const techStack = [
     name: "Python",
     image: skillImage("Python"),
     category: "Language",
-    description: ["데이터 분석 및 자동화 스크립트 작성", "Django 웹 서버 구축 경험"],
+    description: ["Django 웹 서버 구현 (SSAFY)", "Pandas·NumPy 기반 데이터 전처리 및 통계 분석 (학부)"],
   },
   {
     name: "Docker",
@@ -116,48 +116,48 @@ export const techStack = [
     name: "Git",
     image: skillImage("Git"),
     category: "Collaboration",
-    description: ["버전 관리 및 브랜치 전략 적용", "CI/CD 자동화 (GitHub Actions)"],
+    description: ["기능 브랜치 기반 팀 협업 및 코드 리뷰", "CI/CD 자동화 (GitHub Actions)"],
   },
   {
     name: "JIRA",
     image: skillImage("Jira"),
     category: "Collaboration",
-    description: ["애자일 프로젝트 관리", "작업 진행 상황 시각적 관리"],
+    description: ["스프린트 단위 이슈 관리 (SSAFY 팀 프로젝트)"],
   },
   {
     name: "Figma",
     image: skillImage("Figma"),
     category: "Collaboration",
-    description: ["UI/UX 프로토타이핑", "Auto Layout 및 컴포넌트 관리"],
+    description: ["와이어프레임·프로토타입 작성 후 개발 진행"],
   },
   {
     name: "Notion",
     image: skillImage("Notion"),
     category: "Collaboration",
-    description: ["팀 협업 및 프로젝트 관리", "데이터베이스 및 템플릿 생성"],
+    description: ["회의록·기획 문서 관리"],
   },
 ];
 
-// **텍스트** 는 강조 표시된다 (components/ui/HighlightText).
-export const softSkills = [
+// 실제 경험 기반 일하는 방식. **텍스트** 는 강조 표시된다 (components/ui/HighlightText).
+export const strengths = [
   {
-    title: "Communication",
+    title: "레거시를 구조로",
     description:
-      "저는 **소통**을 가장 중요하게 생각하며, **팀워크**를 통해 협력하는 것을 선호합니다. 팀원들과의 열린 대화를 통해 아이디어를 나누고, 명확하게 의견을 전달하는 것이 중요하다고 믿습니다.",
+      "PHP 레거시의 업무 로직을 **컨트롤러 / 서비스 / 레포지토리 / 모델** 계층으로 나눠 Laravel 차세대 시스템으로 옮겼습니다.",
   },
   {
-    title: "Problem-Solving",
+    title: "데이터는 끝까지 확인",
     description:
-      "문제를 분석하고 해결하는 데 있어 **논리적이고 창의적인 접근**을 중요시합니다. 복잡한 문제를 단계적으로 나누어 해결하고, 개발 과정에서 발생하는 **UI/UX와 데이터 문제**를 빠르게 파악하고 해결하려 노력합니다.",
+      "마이그레이션 후 **데이터 정합성**을 검증하고, 장애로 누락된 문자·입금·신용정보 데이터를 추적해 **복구**했습니다.",
   },
   {
-    title: "Adaptability",
+    title: "현장에서 요구사항 해결",
     description:
-      "빠르게 변화하는 기술 환경에 **적응하는 능력**이 중요하다고 생각합니다. 새로운 기술이나 프레임워크를 유연하게 학습하고, 필요할 경우 기존의 방식을 바꾸는 데 두려움이 없습니다.",
+      "고객사에 상주하며 **요구사항 분석부터 운영 반영까지** 직접 맡았고, 미회수 5,000건 자동 회수 배치를 개발했습니다.",
   },
   {
-    title: "Attention to Detail",
+    title: "화면과 서버를 함께",
     description:
-      "**작은 디테일**에도 신경 쓰는 것이 개발의 핵심이라고 생각합니다. 인터페이스의 작은 요소까지 꼼꼼히 점검하며, 퍼포먼스 최적화와 디자인 일관성에 주의를 기울입니다.",
+      "SSAFY에서 **팀 프로젝트 4회(팀장 2회)**로 React·React Native를, 실무에서 **PHP·Laravel 백엔드**를 다뤘습니다.",
   },
 ];

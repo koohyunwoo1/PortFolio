@@ -4,7 +4,7 @@ import Tag from "../../components/ui/Tag";
 import HighlightText from "../../components/ui/HighlightText";
 import { SECTION_ID } from "../../constants/sections";
 import { contacts, profile } from "../../data/profile";
-import { softSkills } from "../../data/skills";
+import { strengths } from "../../data/skills";
 import styles from "./About.module.css";
 
 const FACTS = [
@@ -16,8 +16,8 @@ const About = () => (
   <Section
     id={SECTION_ID.about}
     eyebrow="About"
-    title={`안녕하세요, ${profile.name}입니다`}
-    description={profile.intro.join(" ")}
+    title={`${profile.name}는 이렇게 일합니다`}
+    description={profile.intro}
   >
     <div className={styles.grid}>
       <Reveal className={styles.profile}>
@@ -45,12 +45,12 @@ const About = () => (
       </Reveal>
 
       <div className={styles.values}>
-        {softSkills.map((skill, index) => (
-          <Reveal key={skill.title} delay={index * 80} className={styles.valueCard}>
+        {strengths.map((item, index) => (
+          <Reveal key={item.title} delay={index * 80} className={styles.valueCard}>
             <span className={styles.index}>{String(index + 1).padStart(2, "0")}</span>
-            <h3 className={styles.valueTitle}>{skill.title}</h3>
+            <h3 className={styles.valueTitle}>{item.title}</h3>
             <p className={styles.valueText}>
-              <HighlightText text={skill.description} />
+              <HighlightText text={item.description} />
             </p>
           </Reveal>
         ))}

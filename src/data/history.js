@@ -70,7 +70,7 @@ export const education = [
     subtitle: "(주)삼성전자 주관 소프트웨어 개발자 교육 수료",
     period: "2024.01 ~ 2024.12",
     details: [
-      "12개월간 총 1600시간의, SW 개발 집중 교육 수료",
+      "12개월간 총 1,600시간의 SW 개발 집중 교육 수료",
       "파이썬과 Django 프레임워크 학습, HTML, CSS 등 웹 기본 기술 습득, JavaScript 및 Vue.js 프론트엔드 프레임워크 습득.",
       "4회의 팀 프로젝트를 통해 React와 TypeScript를 학습하고, React Native를 이용한 모바일 애플리케이션 개발 경험.",
     ],
