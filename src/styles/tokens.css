@@ -1,0 +1,85 @@
+/* 디자인 토큰 — 색·타이포·간격·모양은 여기서만 정의한다. */
+:root {
+  /* color: surface */
+  --color-bg: #ffffff;
+  --color-bg-subtle: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-border: #e5e8eb;
+  --color-border-strong: #d1d6db;
+
+  /* color: text */
+  --color-text: #191f28;
+  --color-text-secondary: #4e5968;
+  --color-text-tertiary: #8b95a1;
+  --color-text-on-dark: #ffffff;
+  --color-text-on-dark-muted: rgba(255, 255, 255, 0.64);
+
+  /* color: brand */
+  --color-primary: #1b64da;
+  --color-primary-hover: #1653b8;
+  --color-primary-soft: #e8f1ff;
+  --color-positive: #00a37a;
+  --color-positive-soft: #e3f8f1;
+  --color-navy: #0b1b34;
+  --color-navy-raised: #15294a;
+
+  /* typography */
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 32px;
+  --text-4xl: 40px;
+  --text-display: 56px;
+
+  /* spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* shape */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-md: 0 1px 2px rgba(16, 24, 40, 0.04), 0 12px 32px rgba(16, 24, 40, 0.08);
+  --shadow-lg: 0 24px 56px rgba(11, 27, 52, 0.22);
+
+  /* motion */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duration: 0.25s;
+
+  /* layout */
+  --container: 1120px;
+  --gutter: 24px;
+  --header-height: 64px;
+  --z-header: 100;
+  --z-modal: 200;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --text-2xl: 22px;
+    --text-3xl: 26px;
+    --text-4xl: 30px;
+    --text-display: 36px;
+    --space-24: 72px;
+    --gutter: 20px;
+  }
+}

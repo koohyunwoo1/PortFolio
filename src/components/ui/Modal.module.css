@@ -1,0 +1,86 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  padding: var(--space-10) var(--space-4);
+  overflow-y: auto;
+  background-color: rgba(11, 27, 52, 0.55);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.2s var(--ease);
+}
+
+.lightboxOverlay {
+  background-color: rgba(11, 27, 52, 0.85);
+}
+
+.content {
+  position: relative;
+  margin: auto;
+  animation: rise 0.3s var(--ease);
+}
+
+.default {
+  width: 100%;
+  max-width: 880px;
+  padding: var(--space-12);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+}
+
+.lightbox {
+  max-width: 90vw;
+}
+
+.close {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-secondary);
+  font-size: 24px;
+  line-height: 1;
+  transition: background-color var(--duration) var(--ease), color var(--duration) var(--ease);
+}
+
+.close:hover {
+  background-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.lightbox .close {
+  top: -52px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+}
+
+@media (max-width: 640px) {
+  .overlay {
+    padding: var(--space-4);
+  }
+
+  .default {
+    padding: var(--space-12) var(--space-5) var(--space-8);
+    border-radius: var(--radius-lg);
+  }
+}

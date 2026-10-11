@@ -1,0 +1,26 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  height: 26px;
+  padding-inline: var(--space-2);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.neutral {
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-secondary);
+}
+
+.primary {
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+.positive {
+  background-color: var(--color-positive-soft);
+  color: var(--color-positive);
+}
